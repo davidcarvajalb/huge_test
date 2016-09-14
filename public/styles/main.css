@@ -1,0 +1,122 @@
+@font-face {
+  font-family: 'HUGEAvantGardeBold';
+  src: url("/fonts/huge_agb_v5-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/huge_agb_v5-webfont.woff") format("woff"), url("/fonts/huge_agb_v5-webfont.ttf") format("truetype"), url("/fonts/huge_agb_v5-webfont.svg#svgFontName") format("svg"); }
+
+@font-face {
+  font-family: 'Galaxie';
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/GalaxieCopernicus-Book.eot?#iefix") format("embedded-opentype"), url("/fonts/GalaxieCopernicus-Book.woff") format("woff"), url("/fonts/GalaxieCopernicus-Book.svg#svgFontName") format("svg"); }
+
+@font-face {
+  font-family: 'Galaxie';
+  font-style: italic;
+  font-weight: normal;
+  src: url("/fonts/GalaxieCopernicus-BookItalic.eot?#iefix") format("embedded-opentype"), url("/fonts/GalaxieCopernicus-BookItalic.woff") format("woff"), url("/fonts/GalaxieCopernicus-BookItalic.svg#svgFontName") format("svg"); }
+
+/*
+body {
+  background: #ec008c;
+  color: #fff;
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font: 20vmin/1 HUGEAvantGardeBold;
+  letter-spacing: -0.06em;
+  text-align: center;
+}
+*/
+/* General */
+body {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none;
+  display: block; }
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.pull-right {
+  float: right !important; }
+
+ul {
+  list-style: none;
+  margin: 0; }
+
+.vertical-center {
+  position: relative;
+  top: 50%;
+  transform: perspective(1px) translateY(-50%); }
+
+.container {
+  width: 968px;
+  margin: 0 auto; }
+
+@media (min-width: 768px) {
+  .hidden-sm-up {
+    display: none; } }
+
+/* Nav styles */
+nav {
+  background: #ec008c; }
+  nav .navbar-brand {
+    padding: 24px 48px 24px 24px;
+    height: 24px;
+    font-weight: normal;
+    letter-spacing: -0.1em; }
+  nav .navbar-header {
+    float: left; }
+  nav ul.navbar-nav {
+    float: left; }
+    nav ul.navbar-nav > li {
+      float: left; }
+      nav ul.navbar-nav > li > a {
+        font: 21px/72px HUGEAvantGardeBold;
+        color: #fff;
+        padding: 0px 24px; }
+      nav ul.navbar-nav > li ul {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        padding: 0px;
+        z-index: 1; }
+      nav ul.navbar-nav > li:hover > a {
+        background: #fff;
+        color: #ec008c; }
+      nav ul.navbar-nav > li:hover ul {
+        display: block; }
+        nav ul.navbar-nav > li:hover ul li a {
+          font: 16px/48px Galaxie;
+          color: #000;
+          padding: 0px 24px;
+          background: #fff; }
+        nav ul.navbar-nav > li:hover ul li:hover a {
+          background: #eee;
+          color: #ec008c; }
+
+/* Banner styles */
+.banner {
+  text-align: center;
+  background-image: url("../images/background-image.jpg");
+  background-color: #000;
+  background-size: auto 100%;
+  height: 640px; }
+  .banner h1 {
+    font: 120px/132px HUGEAvantGardeBold;
+    color: #fff;
+    margin: 0; }
+
+/* Footer styles */
+.content {
+  padding-top: 60px;
+  font: 24px/36px Galaxie; }

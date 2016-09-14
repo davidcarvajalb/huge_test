@@ -1,0 +1,144 @@
+@import "fonts";
+
+// Typography
+$primary: HUGEAvantGardeBold;
+$secondary: Galaxie;
+
+// Color
+$magenta: #ec008c;
+$lightgray: #eee;
+$translucent_black: rgba(0, 0, 0, 0.5);
+$white: #fff;
+$black: #000;
+
+/*
+body {
+  background: #ec008c;
+  color: #fff;
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font: 20vmin/1 HUGEAvantGardeBold;
+  letter-spacing: -0.06em;
+  text-align: center;
+}
+*/
+
+/* General */
+body{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  display: block;
+}
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.pull-right {
+    float: right!important;
+}
+ul{
+  list-style: none;
+  margin: 0;
+}
+.vertical-center{
+  position: relative;
+  top: 50%;
+  transform: perspective(1px) translateY(-50%);
+}
+.container{
+  width: 968px;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+
+}
+@media (min-width: 768px) {
+  .hidden-sm-up{
+    display: none;
+  }
+}
+/* Nav styles */
+nav{
+  background: $magenta;
+  .navbar-brand{
+    padding: 24px 48px 24px 24px;
+    height: 24px;
+    font-weight: normal;
+    letter-spacing: -0.1em;
+  }
+  .navbar-header{
+    float: left;
+  }
+  ul.navbar-nav{
+    float: left;
+    > li{
+      float: left;
+      > a{
+        font: 21px/72px $primary;
+        color: $white;
+        padding: 0px 24px;
+      }
+      ul{
+        display: none;
+        position: absolute;
+        background-color: $white;
+        padding: 0px;
+        z-index: 1;
+      }
+      &:hover{
+        > a{
+          background: $white;
+          color: $magenta;
+        }
+        ul{
+          display: block;
+          li{
+            a{
+              font: 16px/48px $secondary;
+              color: $black;
+              padding: 0px 24px;
+              background: $white;
+            }
+            &:hover{
+              a{
+                background: $lightgray;
+                color: $magenta;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Banner styles */
+.banner{
+  text-align: center;
+  background-image: url('../images/background-image.jpg');
+  background-color: $black;
+  background-size: auto 100%;
+  height: 640px;
+  h1{
+    font: 120px/132px $primary;
+    color: $white;
+    margin: 0;
+  }
+}
+
+/* Footer styles */
+.content{
+  padding-top: 60px;
+  font: 24px/36px $secondary;
+}

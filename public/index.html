@@ -6,25 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-  <nav class="group">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="/">
-        <img src="images/logo_white.png" alt="Huge">
-      </a>
-      <button class="navbar-toggler pull-right hidden-sm-up" type="button" data-toggle="collapse" data-target="#bd-main-nav">x</button>
-    </div>
-    <div class="collapse navbar-toggleable-xs" id="bd-main-nav">
-      <ul id="d-navbar" class="nav navbar-nav"></ul>
-    </div>
-  </nav>
-  <div class="content-wrapper">
+  <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+  <label class="hidden-sm-up" for="nav-trigger"></label>
+  <ul id="d-navbar" class="nav navbar-nav group">
+    <li class="navbar-brand">
+      <a href="/" title="Back to home"><img src="images/logo_white.png" alt="Huge"></li></a>
+  </ul>
+  <div id="content-wrapper" class="content-wrapper">
     <section class="banner">
+      <img class="hidden-sm-up" src="/images/background-image.jpg" alt="Huge">
       <h1 class="vertical-center">Get paid for <br> giving a shit.</h1>
     </section>
     <section class="content container">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolor ea saepe amet soluta minus libero consequatur veniam recusandae quia excepturi nulla magni, ipsum. Ab repellendus reprehenderit nobis aspernatur pariatur?
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim orci a justo aliquet pellentesque. Maecenas scelerisque urna at lorem consequat rutrum. Integer lorem erat, mollis eget volutpat sed, tempor quis sem. Cras blandit convallis cursus. In euismod scelerisque facilisis. Donec facilisis magna ac felis ultricies condimentum. Praesent justo ligula, maximus at magna sed, ultricies facilisis nulla. Fusce sit amet mi nec est dictum iaculis. Ut risus metus, vehicula eget tellus id, ullamcorper tincidunt quam. Maecenas congue volutpat lacus eget molestie. Etiam porttitor mattis risus. Etiam vestibulum vehicula nisi, quis varius neque sodales ac.</p>
     </section>
   </div>
+  <div id="mask"></div>
   <footer>
     <div class="container">
       <p class="copyright">
